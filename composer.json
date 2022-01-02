@@ -1,0 +1,6 @@
+{
+    "name": "shiri/mqtt-publisher",
+    "require": {
+        "php-mqtt/client": "^1.1"
+    }
+}
