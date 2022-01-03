@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '6df1cbd746248a4f84cf1bf39cd8e1d063778970',
+    'reference' => '7c1d840f4e537d3078b83232ab07d366c4bf0d7e',
     'name' => 'shiri/mqtt_publisher',
   ),
   'versions' => 
@@ -45,7 +45,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '6df1cbd746248a4f84cf1bf39cd8e1d063778970',
+      'reference' => '7c1d840f4e537d3078b83232ab07d366c4bf0d7e',
     ),
   ),
 );

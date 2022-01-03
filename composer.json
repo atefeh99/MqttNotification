@@ -4,5 +4,8 @@
     "type": "library",
     "require": {
         "php-mqtt/client": "^1.1"
+    },
+"autoload": {
+        "psr-4": {"mqtt_publisher\\src\\": "src/"}
     }
 }
