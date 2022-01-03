@@ -8,5 +8,5 @@
     },
  "autoload": {
         "psr-4": {
-            "Mqtt_publisher\\Src": "mqtt_publisher/src"}}
+            "Mqtt_publisher\\": "mqtt_publisher/src"}}
 }
