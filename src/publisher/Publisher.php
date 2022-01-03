@@ -1,4 +1,5 @@
 <?php
+namespace mqtt_publisher\src\publisher;
 
 use Illuminate\Support\Facades\Log;
 use PhpMqtt\Client\Exceptions\MqttClientException;
