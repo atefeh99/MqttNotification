@@ -1,5 +1,7 @@
 {
-    "name": "shiri/mqtt-publisher",
+    "name": "shiri/mqtt_publisher",
+    "description": "this package publish notifications through mqtt.",
+    "type": "library",
     "require": {
         "php-mqtt/client": "^1.1"
     }

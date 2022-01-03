@@ -1,13 +1,13 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
-    'name' => 'shiri/mqtt-publisher',
+    'reference' => '6df1cbd746248a4f84cf1bf39cd8e1d063778970',
+    'name' => 'shiri/mqtt_publisher',
   ),
   'versions' => 
   array (
@@ -38,14 +38,14 @@
       ),
       'reference' => 'd49695b909c3b7628b6289db5479a1c204601f11',
     ),
-    'shiri/mqtt-publisher' => 
+    'shiri/mqtt_publisher' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '6df1cbd746248a4f84cf1bf39cd8e1d063778970',
     ),
   ),
 );
