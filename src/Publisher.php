@@ -1,6 +1,8 @@
 <?php
+require_once __DIR__ . '/vendor/autoload.php';
 
 namespace mqtt_publisher\src;
+
 
 use Illuminate\Support\Facades\Log;
 use PhpMqtt\Client\Exceptions\MqttClientException;

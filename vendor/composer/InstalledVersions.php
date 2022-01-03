@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '7c1d840f4e537d3078b83232ab07d366c4bf0d7e',
+    'reference' => '9a79ff3fd1325688abde77c0d60d5059f899a981',
     'name' => 'shiri/mqtt_publisher',
   ),
   'versions' => 
@@ -69,7 +69,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '7c1d840f4e537d3078b83232ab07d366c4bf0d7e',
+      'reference' => '9a79ff3fd1325688abde77c0d60d5059f899a981',
     ),
   ),
 );

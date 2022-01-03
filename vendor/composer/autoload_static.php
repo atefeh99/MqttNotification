@@ -7,10 +7,6 @@ namespace Composer\Autoload;
 class ComposerStaticInitd737fd6afa23b4166ff1f825448dbd49
 {
     public static $prefixLengthsPsr4 = array (
-        'm' => 
-        array (
-            'mqtt_publisher\\src\\' => 19,
-        ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
@@ -19,14 +15,11 @@ class ComposerStaticInitd737fd6afa23b4166ff1f825448dbd49
         'M' => 
         array (
             'MyCLabs\\Enum\\' => 13,
+            'Mqtt_publisher\\' => 15,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'mqtt_publisher\\src\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
@@ -38,6 +31,10 @@ class ComposerStaticInitd737fd6afa23b4166ff1f825448dbd49
         'MyCLabs\\Enum\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/php-enum/src',
+        ),
+        'Mqtt_publisher\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/mqtt_publisher/src',
         ),
     );
 
