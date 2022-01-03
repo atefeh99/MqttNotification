@@ -6,7 +6,7 @@
 	"php": "^7.3|^8.0",
         "php-mqtt/client": "^1.1"
     },
-"autoload": {
-        "psr-4": {"shiri\\mqtt_publisher\\src\\": "src/"}
-    }
+ "autoload": {
+        "psr-4": {
+            "Mqtt_publisher\\": "mqtt_publisher/src"}}
 }
