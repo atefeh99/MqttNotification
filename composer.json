@@ -3,6 +3,7 @@
     "description": "this package publish notifications through mqtt.",
     "type": "library",
     "require": {
+	"php": "^7.3|^8.0",
         "php-mqtt/client": "^1.1"
     },
 "autoload": {
