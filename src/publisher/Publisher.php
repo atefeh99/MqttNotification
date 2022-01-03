@@ -4,12 +4,11 @@ use Illuminate\Support\Facades\Log;
 use PhpMqtt\Client\Exceptions\MqttClientException;
 use PhpMqtt\Client\MqttClient;
 use PhpMqtt\Client\ConnectionSettings;
-require 'vendor/autoload.php';
 
-class Publisher 
+class Publisher
 {
     private $server;
-    private $port = 1883;
+    private $port;
     private $username;
     private $password;
     private $message_type;
@@ -22,11 +21,28 @@ class Publisher
     private $clean_session = false;
     private $mqtt_client;
 
-    public function __construct($server, $username, $password, $metadata, $job_id, $success_time, $user, $application, $message_type = null)
+    public function __construct($metadata, $job_id, $success_time, $user, $application, $message_type = null, $server = null, $username = null, $password = null,$port=null)
     {
-        $this->server = $server;
-        $this->username = $username;
-        $this->password = $password;
+        if ($server) {
+            $this->server = $server;
+        } else {
+            $this->server = env('MQTT_HOST', 'localhost');
+        }
+        if ($username) {
+            $this->username = $username;
+        } else {
+            $this->username = env('MQTT_USERNAME', 'guest');
+        }
+        if ($password) {
+            $this->password = $password;
+        } else {
+            $this->password = env('MQTT_PASSWORD', 'guest');
+        }
+        if ($port) {
+            $this->port = $port;
+        } else {
+            $this->port = env('MQTT_PORT', '1883');
+        }
         $this->message_type = $message_type;
         $this->metadata = $metadata;
         $this->job_id = $job_id;
@@ -43,11 +59,12 @@ class Publisher
 //            ->setLastWillQualityOfService(1);
         $this->mqtt_client = self::createClient();
     }
+
     public function __destruct()
     {
         try {
             $this->mqtt_client->disconnect();
-        }catch (\Exception $e){
+        } catch (\Exception $e) {
             Log::error($e->getMessage());
         }
     }
@@ -56,8 +73,7 @@ class Publisher
     {
         try {
             $clientId = rand(5, 15);
-            $port = env('MQTT_PORT') ? env('MQTT_PORT') : $this->port;
-            $client = new MqttClient($this->server, $port, $clientId);
+            $client = new MqttClient($this->server, $this->port, $clientId);
             $client->connect($this->connection_settings, $this->clean_session);
             return $client;
         } catch (\Exception $e) {
