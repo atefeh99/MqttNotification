@@ -100,7 +100,6 @@ class Publisher
                 true
             );
             // With a QoS level to 1 set on the message the client will receive acknowledgments from Solace messaging when it has successfully stored the message.
-            printf("msg send\n");
             return $payload;
         } catch (MqttClientException $e) {
             Log::info('notification not sent: ' . $e->getMessage());
