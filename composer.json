@@ -1,5 +1,5 @@
 {
-    "name": "shiri/mqtt_publisher",
+    "name": "map-ir/mqtt-notification",
     "description": "this package publish notifications through mqtt.",
     "type": "library",
     "license": "MIT",
