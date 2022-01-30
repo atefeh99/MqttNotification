@@ -52,7 +52,7 @@ class Publisher
         $this->user = $user;
         $this->application = $application;
         $this->connection_settings = new ConnectionSettings();
-        $this->connection_settings
+        $this->connection_settings = $this->connection_settings
             ->setUsername($this->username)
             ->setPassword($this->password)
             ->setKeepAliveInterval(120);
@@ -87,7 +87,7 @@ class Publisher
     {
 
         try {
-            //  dd($mqtt);
+
             $payload = self::createPayload();
             $this->mqtt_client->publish(
             // topic
